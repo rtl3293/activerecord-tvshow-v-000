@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    self.find_by(self.highest_rating).name
+    self.find_by(self.highest_rating)
   end
 
 end
